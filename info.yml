@@ -1,0 +1,8 @@
+name: "Type info"
+on: [workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: write info into output
+        run: echo "${{ toJSON(github) }}"
