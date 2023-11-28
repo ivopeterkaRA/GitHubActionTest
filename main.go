@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+func getTheMessage() string {
+	return "Hello World"
+}
+
 func main() {
-	fmt.Println("Hello world")
+	fmt.Println(getTheMessage())
 }
