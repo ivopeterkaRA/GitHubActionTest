@@ -1,5 +1,5 @@
 name: Issue workflow
-on: issue
+on: issues
 jobs:
   describe:
     runs-on: ubuntu-20.04
