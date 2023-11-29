@@ -6,4 +6,4 @@ jobs:
     name: Describe issue
     steps:
       name: Output issue description
-      run: echo "Number of issues: ${{ github.open_issues }}"   
+      run: echo "Issue name: ${{ github.event.issue.labels.name }}"   
