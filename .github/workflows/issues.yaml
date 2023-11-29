@@ -1,0 +1,9 @@
+name: Issue workflow
+on: issue
+jobs:
+  describe:
+    runs-on: ubuntu-20.04
+    name: Describe issue
+    steps:
+      name: Output issue description
+      run: echo "Number of issues: ${{ github.open_issues }}"   
