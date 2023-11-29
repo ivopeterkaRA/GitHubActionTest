@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-20.04
     name: Describe issue
     steps:
-      name: Output issue description
-      run: echo "Issue name - ${{ github.event.issue.labels.name }}"   
+      - name: Output issue description
+        run: echo "Issue name - ${{ github.event.issue.labels.name }}"   
